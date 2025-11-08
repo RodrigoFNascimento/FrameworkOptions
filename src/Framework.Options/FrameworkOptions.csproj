@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net46</TargetFramework>
+    <Description>A minimal, dependency-free library that brings modern-style configuration loading and validation to legacy .NET Framework projects. It allows you to load strongly typed options from appSettings, track which properties were assigned, and validate them using DataAnnotations — just like Microsoft.Extensions.Options, but without requiring the .NET Core configuration stack.</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>FrameworkOptions</Title>
+    <Authors>Rodrigo Nascimento</Authors>
+    <PackageProjectUrl>https://github.com/RodrigoFNascimento/FrameworkOptions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RodrigoFNascimento/FrameworkOptions</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+	<Reference Include="System.Configuration" />
+	<Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+
+</Project>
